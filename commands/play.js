@@ -33,7 +33,7 @@ module.exports.run = async (client, message, args) => {
         .setColor("#0000FF")
         .setFooter(`© created by JeffreyYT✅#2340`, "https://i.scdn.co/image/ab67706c0000bebb12d1a711a79106326fa56b85")
         .setTimestamp()  
-        .setDescription(`Nu aan het spelen ${info.title}`);
+        .setDescription(`**De volgende commands horen bij het music command!: | !play | !leave |**`);
     
       message.channel.send(song);
         
