@@ -1,16 +1,23 @@
-module.exports.run = async (bot, message, args) => {
+const discord = require("discord.js");
+const ytdl = require("ytdl-core");
+
+module.exports.run = async (client, message, args) => {
+
+    if(!message.member.voice.channel) return message.reply("**Verbind met een spraak kanaal**");
+
+    if(message.guild.me.voice.channel) return message.channel.send("**sorry de bot is niet verbonden!**");
+
+    if(message.guild.me.voice.channelID != message.member.voice.channelID) return message.channel.send("sorry je bent niet verbonden met het zelfde kanaal");
+
+    message.guild.me.voice.channel.leave();
 
 
-    if (!message.guild.me.voiceChannel) return message.channel.send("Sorry de bot is niet met een spraak kanaal verbonden.");
 
-    if (message.guild.me.voiceChannelID != message.member.voiceChannelID) return message.channel.send("Sorry je bent niet met hetzelfde kanaal verbonden.");
 
-    message.guild.me.voiceChannel.leave();
-
-    message.channel.send("Kanaal aan het verlaten...");    
+   
+        
 }
 
 module.exports.help = {
     name: "leave",
-    description: "Laat de bot leaven van het kanaal."
 }
