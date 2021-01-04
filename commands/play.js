@@ -14,7 +14,7 @@ module.exports.run = async (client, message, args) => {
 
     var info = await ytdl.getInfo(args[0]);
     
-    var options = {seek: 3, volume: 1, bitrate: 128000 };
+    var options = {seek: 4, volume: 1, bitrate: 128000 };
 
 
 
