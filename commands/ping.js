@@ -10,6 +10,8 @@ module.exports.run = async (bot, message, args) => {
             .setThumbnail("https://i.scdn.co/image/ab67706c0000bebb12d1a711a79106326fa56b85")  
             .setFooter("© created by JeffreyYT✅#2340", "https://i.scdn.co/image/ab67706c0000bebb12d1a711a79106326fa56b85")
             .setTimestamp();
+   
+}
 
 
 
