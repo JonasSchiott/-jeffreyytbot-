@@ -1,4 +1,3 @@
-const BaseCommand = require('../../utils/structures/BaseCommand');
 const { MessageEmbed } = require('discord.js');
 const { purple_medium } = require("../../../colours.json");
 const { version } = require('../../../package.json');
