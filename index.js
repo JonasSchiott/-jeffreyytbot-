@@ -164,8 +164,8 @@ bot.on("message", async message => {
         if (command === `${prefix}invite`) {
 
         var botEmbed = new discord.MessageEmbed()
-            .setTitle("✅**help**✅")
-            .setDescription("**De commands zijn als volgt!:** **!help=Geeft alle commands| !info: Laat info zien over de bot| !play=Speelt muziek af| !leave=Laat de bot uit het kanaal gaan|**")
+            .setTitle("✅**Invite**✅")
+            .setDescription("** Hier is een link om de bot te inviten https://discord.com/api/oauth2/authorize?client_id=759780057287491646&permissions=0&scope=bot**")
             .setColor("#0000FF")
             .setThumbnail("https://i.scdn.co/image/ab67706c0000bebb12d1a711a79106326fa56b85")  
             .setFooter("© created by JeffreyYT✅#2340", "https://i.scdn.co/image/ab67706c0000bebb12d1a711a79106326fa56b85")
