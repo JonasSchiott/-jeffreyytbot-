@@ -1,15 +1,8 @@
 const { MessageEmbed } = require('discord.js');
-const { purple_medium } = require("../../../colours.json");
-const { version } = require('../../../package.json');
+const { version } = require('../package.json');
 const moment = require("moment");
 require("moment-duration-format");
-module.exports = class ApingCommand extends BaseCommand {
-  constructor() {
-    super('stats', 'mod', [], 'stats');
-  }
-
-  async run(client, message) {
- //const duration = moment.duration(this.client.uptime).format(" D [days], H [hrs], m [mins], s [secs]");
+module.exports.run = async (bot, message, args) => {
  let totalSeconds = client.uptime / 1000;
   let days = Math.floor(totalSeconds / 86400);
   let hours = Math.floor(totalSeconds / 3600);
@@ -34,15 +27,7 @@ module.exports = class ApingCommand extends BaseCommand {
       .setFooter('${message.user.username}')
     await message.channel.send({ embed });
     
-  }
-
 }
-
-    
-
-
-
-
 
 module.exports.help = {
     name: "stats",
