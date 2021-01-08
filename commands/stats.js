@@ -3,7 +3,7 @@ const { version } = require('../package.json');
 const moment = require("moment");
 require("moment-duration-format");
 module.exports.run = async (bot, message, args) => {
- let totalSeconds = client.uptime / 1000;
+ let totalSeconds = bot.uptime / 1000;
   let days = Math.floor(totalSeconds / 86400);
   let hours = Math.floor(totalSeconds / 3600);
   totalSeconds %= 3600;
