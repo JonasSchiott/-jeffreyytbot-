@@ -35,4 +35,15 @@ module.exports = class ApingCommand extends BaseCommand {
     await message.channel.send({ embed });
     
   }
+
+}
+
+    
+
+
+
+
+
+module.exports.help = {
+    name: "stats",
 }
